@@ -1,7 +1,7 @@
 # 4site.pro Premium Templates × aeLTD
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/4site-aeltd-logo.svg" alt="4site.pro × aeLTD" width="400" />
+  <h1>4site.pro × aeLTD</h1>
   
   <h3>Transform Your GitHub Repository Into An Award-Winning Website</h3>
   
@@ -26,11 +26,7 @@
 **Rating: 10/10 | Price: $458** *(15% aeLTD markup applied)*
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/liquid-metal-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/liquid-metal-light.gif">
-    <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/liquid-metal-preview.gif" alt="Liquid Metal Commerce Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/liquid-metal-preview.svg" alt="Liquid Metal Commerce Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
 </div>
 
 **Features:**
@@ -43,7 +39,7 @@
 
 **Tech Stack:** Vue 3 • Three.js • TensorFlow.js • WebXR • GSAP • aeLTD Enhancement Suite
 
-[**Preview Live Demo**](https://liquid-metal.preview.4site.pro) | [**Get This Template**](https://premium.4site.pro/liquid-metal-commerce-aeltd)
+[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/liquid-metal-commerce) | [**Get This Template**](https://polar.sh/aegntic/products)
 
 ---
 
@@ -51,11 +47,7 @@
 **Rating: 10/10 | Price: $401** *(15% aeLTD markup applied)*
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/motion-system-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/motion-system-light.gif">
-    <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/motion-system-preview.gif" alt="Motion Design System Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/motion-system-preview.svg" alt="Motion Design System Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
 </div>
 
 **Features:**
@@ -68,7 +60,7 @@
 
 **Tech Stack:** React • GSAP • Framer Motion • Lottie • Storybook • aeLTD Motion Lab
 
-[**Preview Live Demo**](https://motion-system.preview.4site.pro) | [**Get This Template**](https://premium.4site.pro/motion-design-system-aeltd)
+[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/motion-design-system) | [**Get This Template**](https://polar.sh/aegntic/products)
 
 ---
 
@@ -76,11 +68,7 @@
 **Rating: 9/10 | Price: $332** *(15% aeLTD markup applied)*
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/quantum-interface-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/quantum-interface-light.gif">
-    <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/quantum-interface-preview.gif" alt="Quantum Interface Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/quantum-interface-preview.svg" alt="Quantum Interface Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
 </div>
 
 **Features:**
@@ -93,7 +81,7 @@
 
 **Tech Stack:** Next.js • Three.js • React Three Fiber • GLSL • GSAP • aeLTD Quantum Core
 
-[**Preview Live Demo**](https://quantum-interface.preview.4site.pro) | [**Get This Template**](https://premium.4site.pro/quantum-interface-aeltd)
+[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/quantum-interface) | [**Get This Template**](https://polar.sh/aegntic/products)
 
 ---
 
@@ -101,11 +89,7 @@
 **Rating: 9/10 | Price: $297** *(15% aeLTD markup applied)*
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/dimensional-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/dimensional-light.gif">
-    <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/dimensional-preview.gif" alt="Dimensional Dashboard Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/dimensional-preview.svg" alt="Dimensional Dashboard Preview" width="100%" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);" />
 </div>
 
 **Features:**
@@ -118,7 +102,7 @@
 
 **Tech Stack:** React • D3.js • Three.js • WebSocket • Framer Motion • aeLTD Dimension Engine
 
-[**Preview Live Demo**](https://dimensional.preview.4site.pro) | [**Get This Template**](https://premium.4site.pro/dimensional-dashboard-aeltd)
+[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/dimensional-dashboard) | [**Get This Template**](https://polar.sh/aegntic/products)
 
 </div>
 

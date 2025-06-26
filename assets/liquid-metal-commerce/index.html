@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Metal Commerce - Premium E-commerce Template</title>
+    <link rel="stylesheet" href="css/liquid-metal.css">
+</head>
+<body>
+    <div id="webgl-background"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">METALUX</div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">Collections</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn">🔍</button>
+                <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Liquid Metal Collection</h1>
+            <p class="hero-subtitle">Where form meets fluid motion</p>
+            <button class="cta-button">Explore Collection</button>
+        </div>
+        <div class="hero-product">
+            <div class="product-showcase">
+                <img src="https://via.placeholder.com/600x600/222/444?text=Premium+Product" alt="Featured Product">
+                <div class="liquid-overlay"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-product-id="1">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400/333/666?text=Product+1" alt="Product 1">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Liquid Silver Watch</h3>
+                        <p class="price">$2,499</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="2">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400/333/666?text=Product+2" alt="Product 2">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mercury Ring</h3>
+                        <p class="price">$899</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-product-id="3">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400/333/666?text=Product+3" alt="Product 3">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fluid Necklace</h3>
+                        <p class="price">$1,299</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-setup.js"></script>
+    <script>
+        // Cart functionality
+        let cart = [];
+        
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const card = e.target.closest('.product-card');
+                const productId = card.dataset.productId;
+                cart.push(productId);
+                updateCartCount();
+                
+                // Add liquid ripple effect
+                const ripple = document.createElement('div');
+                ripple.className = 'ripple';
+                btn.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 1000);
+            });
+        });
+        
+        function updateCartCount() {
+            document.querySelector('.cart-count').textContent = cart.length;
+        }
+    </script>
+</body>
+</html>

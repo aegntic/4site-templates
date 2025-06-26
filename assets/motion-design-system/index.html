@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Design System - Advanced Animation Showcase</title>
+    <link rel="stylesheet" href="css/motion-system.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+        <p class="loading-text">Initializing Motion System</p>
+    </div>
+
+    <nav class="navbar" data-aos="fade-down">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path class="logo-path" d="M20 5 L35 20 L20 35 L5 20 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>MotionLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                <li><a href="#presets" class="nav-link">Presets</a></li>
+                <li><a href="#playground" class="nav-link">Playground</a></li>
+                <li><a href="#docs" class="nav-link">Docs</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-background">
+            <div class="particle" style="--i: 1"></div>
+            <div class="particle" style="--i: 2"></div>
+            <div class="particle" style="--i: 3"></div>
+            <div class="particle" style="--i: 4"></div>
+            <div class="particle" style="--i: 5"></div>
+        </div>
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="word" style="--i: 0">Motion</span>
+                <span class="word" style="--i: 1">Design</span>
+                <span class="word" style="--i: 2">System</span>
+            </h1>
+            <p class="hero-subtitle">Craft stunning animations with our comprehensive library</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" data-animation="morphing">Get Started</button>
+                <button class="btn btn-secondary" data-animation="pulse">View Examples</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase" class="animation-showcase">
+        <div class="container">
+            <h2 class="section-title">Animation Showcase</h2>
+            
+            <div class="showcase-grid">
+                <!-- Morphing Shapes -->
+                <div class="showcase-item" data-category="morphing">
+                    <div class="preview-box">
+                        <div class="morph-shape"></div>
+                    </div>
+                    <h3>Morphing Shapes</h3>
+                    <p>Smooth shape transitions</p>
+                    <button class="play-btn" data-animation="morph">Play</button>
+                </div>
+
+                <!-- Stagger Animation -->
+                <div class="showcase-item" data-category="stagger">
+                    <div class="preview-box">
+                        <div class="stagger-container">
+                            <div class="stagger-item"></div>
+                            <div class="stagger-item"></div>
+                            <div class="stagger-item"></div>
+                            <div class="stagger-item"></div>
+                        </div>
+                    </div>
+                    <h3>Stagger Effects</h3>
+                    <p>Sequential animations</p>
+                    <button class="play-btn" data-animation="stagger">Play</button>
+                </div>
+
+                <!-- Path Animation -->
+                <div class="showcase-item" data-category="path">
+                    <div class="preview-box">
+                        <svg class="path-svg" viewBox="0 0 200 200">
+                            <path class="motion-path" d="M50,100 Q100,50 150,100 T250,100" stroke="#00d4ff" stroke-width="2" fill="none"/>
+                            <circle class="path-follower" r="8" fill="#00d4ff">
+                                <animateMotion dur="3s" repeatCount="indefinite">
+                                    <mpath href=".motion-path"/>
+                                </animateMotion>
+                            </circle>
+                        </svg>
+                    </div>
+                    <h3>Path Following</h3>
+                    <p>SVG path animations</p>
+                    <button class="play-btn" data-animation="path">Play</button>
+                </div>
+
+                <!-- 3D Transforms -->
+                <div class="showcase-item" data-category="3d">
+                    <div class="preview-box perspective">
+                        <div class="cube-3d">
+                            <div class="cube-face front">Front</div>
+                            <div class="cube-face back">Back</div>
+                            <div class="cube-face right">Right</div>
+                            <div class="cube-face left">Left</div>
+                            <div class="cube-face top">Top</div>
+                            <div class="cube-face bottom">Bottom</div>
+                        </div>
+                    </div>
+                    <h3>3D Transforms</h3>
+                    <p>Perspective animations</p>
+                    <button class="play-btn" data-animation="3d">Play</button>
+                </div>
+
+                <!-- Text Effects -->
+                <div class="showcase-item" data-category="text">
+                    <div class="preview-box">
+                        <h4 class="animated-text" data-text="ANIMATE">ANIMATE</h4>
+                    </div>
+                    <h3>Text Effects</h3>
+                    <p>Dynamic typography</p>
+                    <button class="play-btn" data-animation="text">Play</button>
+                </div>
+
+                <!-- Particle System -->
+                <div class="showcase-item" data-category="particles">
+                    <div class="preview-box">
+                        <canvas id="particle-canvas" width="200" height="200"></canvas>
+                    </div>
+                    <h3>Particle System</h3>
+                    <p>Interactive particles</p>
+                    <button class="play-btn" data-animation="particles">Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="presets" class="presets-section">
+        <div class="container">
+            <h2 class="section-title">Animation Presets</h2>
+            <div class="presets-controls">
+                <button class="preset-filter active" data-filter="all">All</button>
+                <button class="preset-filter" data-filter="entrance">Entrance</button>
+                <button class="preset-filter" data-filter="exit">Exit</button>
+                <button class="preset-filter" data-filter="emphasis">Emphasis</button>
+                <button class="preset-filter" data-filter="transition">Transition</button>
+            </div>
+            
+            <div class="presets-grid">
+                <!-- Presets will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="playground" class="playground-section">
+        <div class="container">
+            <h2 class="section-title">Animation Playground</h2>
+            <div class="playground-wrapper">
+                <div class="controls-panel">
+                    <h3>Controls</h3>
+                    <div class="control-group">
+                        <label>Duration (ms)</label>
+                        <input type="range" id="duration" min="100" max="5000" value="1000">
+                        <span class="value-display">1000ms</span>
+                    </div>
+                    <div class="control-group">
+                        <label>Easing</label>
+                        <select id="easing">
+                            <option value="linear">Linear</option>
+                            <option value="ease">Ease</option>
+                            <option value="ease-in">Ease In</option>
+                            <option value="ease-out">Ease Out</option>
+                            <option value="ease-in-out" selected>Ease In Out</option>
+                            <option value="cubic-bezier(0.68,-0.55,0.265,1.55)">Elastic</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Animation Type</label>
+                        <select id="animation-type">
+                            <option value="scale">Scale</option>
+                            <option value="rotate">Rotate</option>
+                            <option value="translate">Translate</option>
+                            <option value="skew">Skew</option>
+                            <option value="combined">Combined</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" id="play-animation">Play Animation</button>
+                </div>
+                <div class="preview-panel">
+                    <div class="playground-element">
+                        <div class="playground-box">Element</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="animations/gsap-library.js"></script>
+    <script>
+        // Loading screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.loading-screen').classList.add('loaded');
+            }, 1500);
+        });
+
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-theme');
+        }
+
+        // Particle canvas
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        const particles = [];
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 2 - 1;
+                this.speedY = Math.random() * 2 - 1;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
+                if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
+            }
+
+            draw() {
+                ctx.fillStyle = '#00d4ff';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            for (let i = 0; i < 50; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        initParticles();
+        animateParticles();
+
+        // Playground controls
+        const durationSlider = document.getElementById('duration');
+        const durationDisplay = document.querySelector('.value-display');
+        const playButton = document.getElementById('play-animation');
+        const playgroundBox = document.querySelector('.playground-box');
+
+        durationSlider.addEventListener('input', (e) => {
+            durationDisplay.textContent = e.target.value + 'ms';
+        });
+
+        playButton.addEventListener('click', () => {
+            const duration = parseInt(durationSlider.value);
+            const easing = document.getElementById('easing').value;
+            const animationType = document.getElementById('animation-type').value;
+            
+            playgroundBox.style.transition = `all ${duration}ms ${easing}`;
+            playgroundBox.classList.add(`animate-${animationType}`);
+            
+            setTimeout(() => {
+                playgroundBox.classList.remove(`animate-${animationType}`);
+            }, duration);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+{
+  "presets": {
+    "entrance": {
+      "fadeIn": {
+        "name": "Fade In",
+        "description": "Simple fade in effect",
+        "duration": 1000,
+        "easing": "ease-out",
+        "properties": {
+          "opacity": { "from": 0, "to": 1 }
+        }
+      },
+      "slideInLeft": {
+        "name": "Slide In Left",
+        "description": "Slide in from left side",
+        "duration": 800,
+        "easing": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "properties": {
+          "transform": { "from": "translateX(-100%)", "to": "translateX(0)" },
+          "opacity": { "from": 0, "to": 1 }
+        }
+      },
+      "bounceIn": {
+        "name": "Bounce In",
+        "description": "Elastic bounce entrance",
+        "duration": 1200,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "properties": {
+          "transform": { "from": "scale(0.3)", "to": "scale(1)" },
+          "opacity": { "from": 0, "to": 1 }
+        }
+      },
+      "rotateIn": {
+        "name": "Rotate In",
+        "description": "Rotate and fade in",
+        "duration": 1000,
+        "easing": "ease-out",
+        "properties": {
+          "transform": { "from": "rotate(-180deg) scale(0.5)", "to": "rotate(0) scale(1)" },
+          "opacity": { "from": 0, "to": 1 }
+        }
+      },
+      "zoomIn": {
+        "name": "Zoom In",
+        "description": "Zoom in from center",
+        "duration": 600,
+        "easing": "ease-out",
+        "properties": {
+          "transform": { "from": "scale(0)", "to": "scale(1)" },
+          "opacity": { "from": 0, "to": 1 }
+        }
+      }
+    },
+    "exit": {
+      "fadeOut": {
+        "name": "Fade Out",
+        "description": "Simple fade out effect",
+        "duration": 800,
+        "easing": "ease-in",
+        "properties": {
+          "opacity": { "from": 1, "to": 0 }
+        }
+      },
+      "slideOutRight": {
+        "name": "Slide Out Right",
+        "description": "Slide out to right side",
+        "duration": 800,
+        "easing": "ease-in",
+        "properties": {
+          "transform": { "from": "translateX(0)", "to": "translateX(100%)" },
+          "opacity": { "from": 1, "to": 0 }
+        }
+      },
+      "shrinkOut": {
+        "name": "Shrink Out",
+        "description": "Shrink and fade out",
+        "duration": 600,
+        "easing": "ease-in",
+        "properties": {
+          "transform": { "from": "scale(1)", "to": "scale(0)" },
+          "opacity": { "from": 1, "to": 0 }
+        }
+      }
+    },
+    "emphasis": {
+      "pulse": {
+        "name": "Pulse",
+        "description": "Pulsing scale effect",
+        "duration": 1000,
+        "easing": "ease-in-out",
+        "loop": true,
+        "properties": {
+          "transform": { 
+            "keyframes": ["scale(1)", "scale(1.05)", "scale(1)"]
+          }
+        }
+      },
+      "shake": {
+        "name": "Shake",
+        "description": "Horizontal shake effect",
+        "duration": 500,
+        "easing": "ease-in-out",
+        "properties": {
+          "transform": {
+            "keyframes": [
+              "translateX(0)",
+              "translateX(-10px)",
+              "translateX(10px)",
+              "translateX(-10px)",
+              "translateX(10px)",
+              "translateX(0)"
+            ]
+          }
+        }
+      },
+      "wobble": {
+        "name": "Wobble",
+        "description": "Wobbling rotation effect",
+        "duration": 1000,
+        "easing": "ease-in-out",
+        "properties": {
+          "transform": {
+            "keyframes": [
+              "rotate(0deg)",
+              "rotate(-5deg)",
+              "rotate(5deg)",
+              "rotate(-3deg)",
+              "rotate(3deg)",
+              "rotate(0deg)"
+            ]
+          }
+        }
+      },
+      "heartbeat": {
+        "name": "Heartbeat",
+        "description": "Heartbeat pulsing effect",
+        "duration": 1300,
+        "easing": "ease-in-out",
+        "loop": true,
+        "properties": {
+          "transform": {
+            "keyframes": [
+              "scale(1)",
+              "scale(1.3)",
+              "scale(1)",
+              "scale(1.2)",
+              "scale(1)"
+            ]
+          }
+        }
+      }
+    },
+    "transition": {
+      "morphShape": {
+        "name": "Morph Shape",
+        "description": "Shape morphing animation",
+        "duration": 2000,
+        "easing": "ease-in-out",
+        "properties": {
+          "borderRadius": {
+            "keyframes": [
+              "50%",
+              "0%",
+              "25%",
+              "50%"
+            ]
+          },
+          "transform": {
+            "keyframes": [
+              "rotate(0deg)",
+              "rotate(180deg)",
+              "rotate(360deg)"
+            ]
+          }
+        }
+      },
+      "colorWave": {
+        "name": "Color Wave",
+        "description": "Gradient color transition",
+        "duration": 3000,
+        "easing": "linear",
+        "loop": true,
+        "properties": {
+          "background": {
+            "keyframes": [
+              "linear-gradient(45deg, #00d4ff, #ff0080)",
+              "linear-gradient(45deg, #ff0080, #ffcc00)",
+              "linear-gradient(45deg, #ffcc00, #00ff00)",
+              "linear-gradient(45deg, #00ff00, #00d4ff)"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "easings": {
+    "linear": "linear",
+    "ease": "ease",
+    "ease-in": "ease-in",
+    "ease-out": "ease-out",
+    "ease-in-out": "ease-in-out",
+    "elastic": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+    "bounce": "cubic-bezier(0.87, -0.41, 0.19, 1.44)",
+    "back": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+    "smooth": "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+  },
+  "durations": {
+    "fast": 300,
+    "normal": 600,
+    "slow": 1000,
+    "slower": 1500,
+    "slowest": 2000
+  },
+  "delays": {
+    "short": 100,
+    "medium": 300,
+    "long": 500,
+    "longer": 800
+  }
+}

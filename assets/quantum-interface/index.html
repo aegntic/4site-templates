@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Interface - Particle System Dashboard</title>
+    <link rel="stylesheet" href="css/quantum.css">
+</head>
+<body>
+    <canvas id="quantum-canvas"></canvas>
+    
+    <div class="quantum-overlay">
+        <nav class="quantum-nav">
+            <div class="nav-wrapper">
+                <div class="quantum-logo">
+                    <div class="logo-particles">
+                        <span class="particle-dot"></span>
+                        <span class="particle-dot"></span>
+                        <span class="particle-dot"></span>
+                    </div>
+                    <span class="logo-text">QUANTUM</span>
+                </div>
+                
+                <ul class="quantum-menu">
+                    <li><a href="#dashboard" class="quantum-link active">Dashboard</a></li>
+                    <li><a href="#analytics" class="quantum-link">Analytics</a></li>
+                    <li><a href="#systems" class="quantum-link">Systems</a></li>
+                    <li><a href="#network" class="quantum-link">Network</a></li>
+                </ul>
+                
+                <div class="quantum-status">
+                    <div class="status-indicator active"></div>
+                    <span>System Online</span>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="quantum-dashboard">
+            <div class="dashboard-grid">
+                <!-- Quantum Metrics Card -->
+                <div class="quantum-card" data-particle-density="high">
+                    <div class="card-header">
+                        <h3>Quantum Metrics</h3>
+                        <div class="card-controls">
+                            <button class="control-btn" data-action="refresh">⟳</button>
+                            <button class="control-btn" data-action="expand">⤢</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric-display">
+                            <div class="metric">
+                                <span class="metric-value" data-counter="true">0</span>
+                                <span class="metric-label">Particles Active</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">98.5%</span>
+                                <span class="metric-label">System Efficiency</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">1.2GHz</span>
+                                <span class="metric-label">Quantum Frequency</span>
+                            </div>
+                        </div>
+                        <canvas class="quantum-wave" id="wave-display"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Entanglement Network -->
+                <div class="quantum-card large" data-particle-density="medium">
+                    <div class="card-header">
+                        <h3>Entanglement Network</h3>
+                        <div class="card-controls">
+                            <button class="control-btn" data-action="rotate">⟲</button>
+                            <button class="control-btn" data-action="reset">⟳</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="network-visualization" id="entanglement-network">
+                            <svg class="network-svg" viewBox="0 0 400 300">
+                                <!-- Network nodes will be generated here -->
+                            </svg>
+                        </div>
+                        <div class="network-stats">
+                            <div class="stat">
+                                <span class="stat-icon">⚛</span>
+                                <span class="stat-value">24</span>
+                                <span class="stat-label">Active Nodes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon">⟷</span>
+                                <span class="stat-value">156</span>
+                                <span class="stat-label">Connections</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon">⚡</span>
+                                <span class="stat-value">42ms</span>
+                                <span class="stat-label">Latency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quantum States -->
+                <div class="quantum-card" data-particle-density="low">
+                    <div class="card-header">
+                        <h3>Quantum States</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="state-indicators">
+                            <div class="state-item">
+                                <div class="state-orb superposition"></div>
+                                <span>Superposition</span>
+                            </div>
+                            <div class="state-item">
+                                <div class="state-orb entangled"></div>
+                                <span>Entangled</span>
+                            </div>
+                            <div class="state-item">
+                                <div class="state-orb collapsed"></div>
+                                <span>Collapsed</span>
+                            </div>
+                        </div>
+                        <div class="quantum-progress">
+                            <div class="progress-label">Coherence Level</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="progress-value">75%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wave Function Visualizer -->
+                <div class="quantum-card" data-particle-density="medium">
+                    <div class="card-header">
+                        <h3>Wave Function</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="wave-function-display">
+                            <canvas id="wave-function" width="300" height="150"></canvas>
+                        </div>
+                        <div class="wave-controls">
+                            <button class="wave-btn active" data-wave="sine">Sine</button>
+                            <button class="wave-btn" data-wave="square">Square</button>
+                            <button class="wave-btn" data-wave="sawtooth">Sawtooth</button>
+                            <button class="wave-btn" data-wave="quantum">Quantum</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Control Panel -->
+                <div class="quantum-card control-panel" data-particle-density="high">
+                    <div class="card-header">
+                        <h3>Quantum Control</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="control-grid">
+                            <div class="control-item">
+                                <label>Particle Density</label>
+                                <input type="range" id="density-control" min="0" max="100" value="50">
+                                <span class="control-value">50</span>
+                            </div>
+                            <div class="control-item">
+                                <label>Field Strength</label>
+                                <input type="range" id="field-control" min="0" max="100" value="75">
+                                <span class="control-value">75</span>
+                            </div>
+                            <div class="control-item">
+                                <label>Entanglement Rate</label>
+                                <input type="range" id="entangle-control" min="0" max="100" value="30">
+                                <span class="control-value">30</span>
+                            </div>
+                        </div>
+                        <div class="control-actions">
+                            <button class="quantum-btn primary" id="activate-field">Activate Field</button>
+                            <button class="quantum-btn secondary" id="reset-system">Reset System</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="quantum-footer">
+            <div class="footer-content">
+                <div class="footer-metrics">
+                    <span class="metric-item">⚛ Quantum State: Stable</span>
+                    <span class="metric-item">⚡ Energy: 4.2 TeV</span>
+                    <span class="metric-item">🌐 Nodes: 24/32</span>
+                    <span class="metric-item">📊 Uptime: 99.98%</span>
+                </div>
+                <div class="footer-version">
+                    Quantum Interface v2.0.0
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script>
+        // Initialize particle counter
+        const particleCounter = document.querySelector('[data-counter="true"]');
+        let particleCount = 0;
+        
+        // Animate particle counter
+        const animateCounter = () => {
+            if (particleCount < 1000) {
+                particleCount += Math.floor(Math.random() * 50) + 10;
+                particleCounter.textContent = particleCount;
+                setTimeout(animateCounter, 100);
+            } else {
+                particleCounter.textContent = '1000+';
+            }
+        };
+        animateCounter();
+        
+        // Control panel interactions
+        document.querySelectorAll('input[type="range"]').forEach(slider => {
+            slider.addEventListener('input', (e) => {
+                const value = e.target.value;
+                e.target.nextElementSibling.textContent = value;
+            });
+        });
+        
+        // Quantum button effects
+        document.getElementById('activate-field').addEventListener('click', function() {
+            this.classList.add('activated');
+            setTimeout(() => this.classList.remove('activated'), 2000);
+        });
+        
+        // Wave function buttons
+        document.querySelectorAll('.wave-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.wave-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Initialize wave displays
+        initializeWaveDisplays();
+        
+        function initializeWaveDisplays() {
+            // Wave display animation
+            const waveCanvas = document.getElementById('wave-display');
+            if (waveCanvas) {
+                const ctx = waveCanvas.getContext('2d');
+                waveCanvas.width = waveCanvas.offsetWidth;
+                waveCanvas.height = 60;
+                
+                let phase = 0;
+                function drawWave() {
+                    ctx.clearRect(0, 0, waveCanvas.width, waveCanvas.height);
+                    ctx.strokeStyle = '#00ffff';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    
+                    for (let x = 0; x < waveCanvas.width; x++) {
+                        const y = Math.sin((x * 0.02) + phase) * 20 + 30;
+                        if (x === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    
+                    ctx.stroke();
+                    phase += 0.1;
+                    requestAnimationFrame(drawWave);
+                }
+                drawWave();
+            }
+            
+            // Wave function display
+            const waveFunction = document.getElementById('wave-function');
+            if (waveFunction) {
+                const ctx = waveFunction.getContext('2d');
+                let time = 0;
+                
+                function drawWaveFunction() {
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                    ctx.fillRect(0, 0, waveFunction.width, waveFunction.height);
+                    
+                    ctx.strokeStyle = '#00ffff';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    
+                    for (let x = 0; x < waveFunction.width; x++) {
+                        const y = Math.sin((x * 0.05) + time) * Math.cos((x * 0.02) - time) * 50 + 75;
+                        if (x === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    
+                    ctx.stroke();
+                    time += 0.05;
+                    requestAnimationFrame(drawWaveFunction);
+                }
+                drawWaveFunction();
+            }
+        }
+    </script>
+</body>
+</html>

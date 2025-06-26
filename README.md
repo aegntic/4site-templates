@@ -24,45 +24,45 @@
   <tr>
     <td width="50%">
       <h4>1. Liquid Metal Commerce</h4>
-      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/liquid-metal-preview.png" alt="Liquid Metal Commerce" width="100%" style="border-radius: 8px;" />
+      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/liquid-metal-preview.svg" alt="Liquid Metal Commerce" width="100%" style="border-radius: 8px;" />
       <p>
         <strong>Rating:</strong> ⭐⭐⭐⭐⭐ 10/10<br>
         <strong>Price:</strong> $458 (aeLTD Edition)<br>
         <strong>Features:</strong> Liquid morphing, WebGL, AR Try-On
       </p>
-      <a href="https://liquid-metal.preview.4site.pro">Live Demo →</a>
+      <a href="assets/liquid-metal-commerce/index.html">View Demo Files →</a>
     </td>
     <td width="50%">
       <h4>2. Motion Design System Pro</h4>
-      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/motion-system-preview.png" alt="Motion Design System" width="100%" style="border-radius: 8px;" />
+      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/motion-system-preview.svg" alt="Motion Design System" width="100%" style="border-radius: 8px;" />
       <p>
         <strong>Rating:</strong> ⭐⭐⭐⭐⭐ 10/10<br>
         <strong>Price:</strong> $401 (aeLTD Edition)<br>
         <strong>Features:</strong> 200+ animations, GSAP, Lottie
       </p>
-      <a href="https://motion-system.preview.4site.pro">Live Demo →</a>
+      <a href="assets/motion-design-system/index.html">View Demo Files →</a>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h4>3. Quantum Interface Pro</h4>
-      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/quantum-interface-preview.png" alt="Quantum Interface" width="100%" style="border-radius: 8px;" />
+      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/quantum-interface-preview.svg" alt="Quantum Interface" width="100%" style="border-radius: 8px;" />
       <p>
         <strong>Rating:</strong> ⭐⭐⭐⭐⭐ 9/10<br>
         <strong>Price:</strong> $332 (aeLTD Edition)<br>
         <strong>Features:</strong> WebGL shaders, Particle physics
       </p>
-      <a href="https://quantum-interface.preview.4site.pro">Live Demo →</a>
+      <a href="assets/quantum-interface/index.html">View Demo Files →</a>
     </td>
     <td width="50%">
       <h4>4. Dimensional Dashboard</h4>
-      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/main/assets/templates/dimensional-preview.png" alt="Dimensional Dashboard" width="100%" style="border-radius: 8px;" />
+      <img src="https://raw.githubusercontent.com/aegntic/4site-templates/master/assets/templates/dimensional-preview.svg" alt="Dimensional Dashboard" width="100%" style="border-radius: 8px;" />
       <p>
         <strong>Rating:</strong> ⭐⭐⭐⭐⭐ 9/10<br>
         <strong>Price:</strong> $297 (aeLTD Edition)<br>
         <strong>Features:</strong> 4D visualization, Real-time data
       </p>
-      <a href="https://dimensional.preview.4site.pro">Live Demo →</a>
+      <a href="assets/dimensional-dashboard/index.html">View Demo Files →</a>
     </td>
   </tr>
 </table>
@@ -125,7 +125,7 @@ https://4site.pro/?repo=facebook/react
 ```
 
 ### For Premium Templates
-1. Browse our [premium collection](https://premium.4site.pro)
+1. Browse our [premium collection](https://github.com/aegntic/4site-templates/blob/master/README-PREMIUM.md)
 2. Purchase through [Polar.sh](https://polar.sh/aegntic)
 3. Deploy with one click
 4. Customize to your needs
