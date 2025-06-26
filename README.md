@@ -78,3 +78,34 @@ Clean and minimal for any project type.
 
 Built with ❤️ by the aegntic ecosystem  
 #####ᵖᵒʷᵉʳᵉᵈ ᵇʸ ᵃᵉᵍⁿᵗᶦᶜ ᵉᶜᵒˢʸˢᵗᵉᵐˢ - ʳᵘᵗʰˡᵉˢˢˡʸ ᵈᵉᵛᵉˡᵒᵖᵉᵈ ᵇʸ aeˡᵗᵈ
+## Live Demo
+
+Visit [4site.pro](https://4site.pro) and see this repository transformed into a professional website!
+
+Or try it directly: [4site.pro/?repo=aegntic/4site-templates](https://4site.pro/?repo=aegntic/4site-templates)
+
+## Quick Start Examples
+
+Try these popular repositories:
+- `facebook/react` - See how a library gets documented
+- `vercel/next.js` - Framework showcase example  
+- `microsoft/vscode` - Application presentation
+- `tailwindlabs/tailwindcss` - CSS framework demo
+
+## Contributing
+
+We welcome contributions! Feel free to:
+- Suggest new template designs
+- Report issues or bugs
+- Share your generated sites
+- Improve documentation
+
+## Connect
+
+- Website: [4site.pro](https://4site.pro)
+- GitHub: [@aegntic](https://github.com/aegntic)
+- Email: contact@aegntic.ai
+
+---
+
+© 2025 aegntic.ai - Part of the ae.ltd ecosystem
