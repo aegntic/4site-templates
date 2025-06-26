@@ -30,7 +30,7 @@
         <strong>Price:</strong> $458 (aeLTD Edition)<br>
         <strong>Features:</strong> Liquid morphing, WebGL, AR Try-On
       </p>
-      <a href="assets/liquid-metal-commerce/index.html">View Demo Files →</a>
+      <a href="https://polar.sh/aegntic">Purchase on Polar →</a>
     </td>
     <td width="50%">
       <h4>2. Motion Design System Pro</h4>
@@ -40,7 +40,7 @@
         <strong>Price:</strong> $401 (aeLTD Edition)<br>
         <strong>Features:</strong> 200+ animations, GSAP, Lottie
       </p>
-      <a href="assets/motion-design-system/index.html">View Demo Files →</a>
+      <a href="https://polar.sh/aegntic">Purchase on Polar →</a>
     </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@
         <strong>Price:</strong> $332 (aeLTD Edition)<br>
         <strong>Features:</strong> WebGL shaders, Particle physics
       </p>
-      <a href="assets/quantum-interface/index.html">View Demo Files →</a>
+      <a href="https://polar.sh/aegntic">Purchase on Polar →</a>
     </td>
     <td width="50%">
       <h4>4. Dimensional Dashboard</h4>
@@ -62,7 +62,7 @@
         <strong>Price:</strong> $297 (aeLTD Edition)<br>
         <strong>Features:</strong> 4D visualization, Real-time data
       </p>
-      <a href="assets/dimensional-dashboard/index.html">View Demo Files →</a>
+      <a href="https://polar.sh/aegntic">Purchase on Polar →</a>
     </td>
   </tr>
 </table>

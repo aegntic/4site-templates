@@ -39,7 +39,7 @@
 
 **Tech Stack:** Vue 3 • Three.js • TensorFlow.js • WebXR • GSAP • aeLTD Enhancement Suite
 
-[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/liquid-metal-commerce) | [**Get This Template**](https://polar.sh/aegntic/products)
+[**Get This Template**](https://polar.sh/aegntic)
 
 ---
 
@@ -60,7 +60,7 @@
 
 **Tech Stack:** React • GSAP • Framer Motion • Lottie • Storybook • aeLTD Motion Lab
 
-[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/motion-design-system) | [**Get This Template**](https://polar.sh/aegntic/products)
+[**Get This Template**](https://polar.sh/aegntic)
 
 ---
 
@@ -81,7 +81,7 @@
 
 **Tech Stack:** Next.js • Three.js • React Three Fiber • GLSL • GSAP • aeLTD Quantum Core
 
-[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/quantum-interface) | [**Get This Template**](https://polar.sh/aegntic/products)
+[**Get This Template**](https://polar.sh/aegntic)
 
 ---
 
@@ -102,7 +102,7 @@
 
 **Tech Stack:** React • D3.js • Three.js • WebSocket • Framer Motion • aeLTD Dimension Engine
 
-[**View Demo Files**](https://github.com/aegntic/4site-templates/tree/master/assets/dimensional-dashboard) | [**Get This Template**](https://polar.sh/aegntic/products)
+[**Get This Template**](https://polar.sh/aegntic)
 
 </div>
 
